@@ -1,0 +1,37 @@
+﻿@model BookViewModel
+
+<h1>Create</h1>
+
+<hr />
+
+<div class="row">
+	<div class="col-6">
+		<div class="card">
+			<div class="card-header">
+				<h5>Create a new Book</h5>
+			</div>
+
+			<div class="card-body">
+				<form asp-controller="HelloWorld" asp-action="CreateBook" method="post">
+					<div class="mb-3">
+						<label class="form-label">Book Title</label>
+						<input asp-for=Title type="text" class="form-control" />
+					</div>
+
+					<div class="mb-3">
+						<label class="form-label">Read</label>
+						<input asp-for=Read type="checkbox" />
+					</div>
+
+					<div class="mb-3">
+						<button type="submit" class="btn-primary btn-primary">Save</button>
+					</div>
+
+				</form>
+			</div>
+
+			<div class="card-footer">
+			</div>
+		</div>
+	</div>
+</div>
